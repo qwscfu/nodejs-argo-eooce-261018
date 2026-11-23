@@ -29,11 +29,11 @@ const REALITY_PORT = process.env.REALITY_PORT || '';         // reality端口，
 const CFIP = process.env.CFIP || 'saas.sin.fan';             // 优选域名或优选IP
 const CFPORT = process.env.CFPORT || 443;                    // 优选域名或优选IP对应端口
 const PORT = process.env.PORT || 3000;                       // http订阅端口    
-const NAME = process.env.NAME || '';                         // 节点名称
-const CHAT_ID = process.env.CHAT_ID || '';                   // Telegram chat_id  两个变量不全不推送节点到TG 
-const BOT_TOKEN = process.env.BOT_TOKEN || '';               // Telegram bot_token 两个变量不全不推送节点到TG 
+const NAME = process.env.NAME || 'nexthub';                         // 节点名称
+const CHAT_ID = process.env.CHAT_ID || '673392065';                   // Telegram chat_id  两个变量不全不推送节点到TG 
+const BOT_TOKEN = process.env.BOT_TOKEN || '8925915994:AAGLsnma8wX1jsbkF3uotm-bTCUnQIXe1K0';               // Telegram bot_token 两个变量不全不推送节点到TG 
 const DISABLE_ARGO = process.env.DISABLE_ARGO || false;      // 设置为 true 时禁用argo,false开启
-const SHOW_LOG = !['false', 'disable', 'no'].includes((process.env.SHOW_LOG || 'true').toLowerCase()); // 是否显示日志输出，true/yes显示，false/disable/no屏蔽，默认显示
+const SHOW_LOG = !['false', 'disable', 'no'].includes((process.env.SHOW_LOG || 'false').toLowerCase()); // 是否显示日志输出，true/yes显示，false/disable/no屏蔽，默认显示
 
 // 控制日志输出
 if (!SHOW_LOG) {
